@@ -30,7 +30,7 @@ def view_songs(songs):
         print(f"\nSong {i}")
         print(f"title: {song.title}")
         print(f"artist: {song.artist}")
-        print(f"instrument: {song.intrument}")
+        print(f"instrument: {song.instrument}")
         print(f"genre: {song.genre}")
         print(f"progress: {song.progress}%")
 
@@ -44,7 +44,7 @@ def search_songs(songs):
             print(f"\n============Song============")
             print(f"title: {song.title}")
             print(f"artist: {song.artist}")
-            print(f"instrument: {song.intrument}")
+            print(f"instrument: {song.instrument}")
             print(f"genre: {song.genre}")
             print(f"progress: {song.progress}%")
             return song

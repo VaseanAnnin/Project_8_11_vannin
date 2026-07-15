@@ -7,10 +7,12 @@ Purpose: This aplication will store and manage the users
 music collection as well as track their progress as they practice
 the songs in the collection
 
-Date: 06/24/2026
+Date: 07/15/2026
 
 """
-
+from menu import menu
+from tracker import add_song, view_songs, search_songs, update_progress, delete_song
+from storage import load_songs
 
 
 """
@@ -24,7 +26,7 @@ Date: 06/24/2026
     }
 
 """
-songs = []
+songs = load_songs()
 """
 def menu():
     ## This function is for the main menu
@@ -117,15 +119,15 @@ while running:
     menu()
     user_input = input("Enter your choice: ")
     if user_input == "1":
-        add_song()
+        add_song(songs)
     elif user_input == "2":
-        view_songs()
+        view_songs(songs)
     elif user_input == "3":
-        search_songs()
+        search_songs(songs)
     elif user_input == "4":
-        update_progress()
+        update_progress(songs)
     elif user_input =="5":
-        delete_song()
+        delete_song(songs)
     elif user_input == "6":
         print ("Keep practicing see you soon!")
         running = False
