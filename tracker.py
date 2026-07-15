@@ -56,17 +56,18 @@ def search_songs(songs):
 def update_progress(songs):
     ##Function updates the progress of a song after searching
     song = search_songs(songs)
-    if song == None:
+    if song is None:
         print("Song was not found")
         return
     progress = int(input("Progress: "))
     song.update_progress(progress)
    
 
-def delete_song():
+def delete_song(songs):
     ## This function deletes the song after searching for it
-    song = search_songs()
+    song = search_songs(songs)
 
     if song is None:
         return 
     songs.remove(song)
+    
