@@ -25,7 +25,7 @@ Date: 06/24/2026
 
 """
 songs = []
-
+"""
 def menu():
     ## This function is for the main menu
     print("\n=====================================")
@@ -34,8 +34,9 @@ def menu():
     print("3. Search Song")
     print("4. Update Progress")
     print("5. Delete Song")
-    print("6. Exit")
+    print("6. Exit")"""
 
+"""
 def add_song():
     ## This function is for adding a new song
     title = input("Song title: ")
@@ -111,7 +112,7 @@ def delete_song():
     if song is None:
         return 
     songs.remove(song)
-
+"""
 while running:
     menu()
     user_input = input("Enter your choice: ")
