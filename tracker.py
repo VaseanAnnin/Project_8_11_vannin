@@ -61,6 +61,8 @@ def update_progress(songs):
         return
     progress = int(input("Progress: "))
     song.update_progress(progress)
+
+    save_songs(songs)
    
 
 def delete_song(songs):
