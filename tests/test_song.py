@@ -39,4 +39,17 @@ class TestSong(unittest.TestCase):
         song.update_progress(50)
 
         self.assertEqual(song.progress, 50)
+
+    def test_update_dict(self):
+        song = Song(
+            "Freudian",
+            "Daniel Caesar",
+            "Guitar",
+            "RNB",
+            10
+        )
+
+        song_data = song.update_dict()
+
+        self.assertEqual(song_data["artist"], "Daniel Caesar")
     
