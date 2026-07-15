@@ -34,28 +34,24 @@ def view_songs(songs):
         print(f"genre: {song.genre}")
         print(f"progress: {song.progress}%")
 
-def search_songs():
+def search_songs(songs):
     ##Search a song within the database
     search = input("song title: ")
     found = False
 
     for song in songs:
-        if song["title"].lower() == search.lower():
+        if song.title.lower() == search.lower():
             print(f"\n============Song============")
-            print(f"title: {song['title']}")
-            print(f"artist: {song['artist']}")
-            print(f"instrument: {song['instrument']}")
-            print(f"genre: {song['genre']}")
-            print(f"progress: {song['progress']}%")
-            found = True
+            print(f"title: {song.title}")
+            print(f"artist: {song.artist}")
+            print(f"instrument: {song.intrument}")
+            print(f"genre: {song.genre}")
+            print(f"progress: {song.progress}%")
             return song
     
     if found ==False:
         print("Can't find song")
 
-
-
-running = True
 
 def update_progress():
     ##Function updates the progress of a song after searching
