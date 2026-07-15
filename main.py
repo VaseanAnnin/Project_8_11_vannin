@@ -13,7 +13,7 @@ Date: 07/15/2026
 from menu import menu
 from tracker import add_song, view_songs, search_songs, update_progress, delete_song
 from storage import load_songs
-songs = load_songs
+songs = load_songs()
 
 running = True
 while running:
