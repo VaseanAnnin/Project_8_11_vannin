@@ -19,7 +19,7 @@ def add_song(songs):
 
     print("=========Song added=========")
 
-def view_songs():
+def view_songs(songs):
     ##This function displays the current songs within the app
 
     if(len(songs)) == 0:
@@ -28,11 +28,11 @@ def view_songs():
     
     for i, song in enumerate(songs, start = 1):
         print(f"\nSong {i}")
-        print(f"title: {song['title']}")
-        print(f"artist: {song['artist']}")
-        print(f"instrument: {song['instrument']}")
-        print(f"genre: {song['genre']}")
-        print(f"progress: {song['progress']}%")
+        print(f"title: {song.title}")
+        print(f"artist: {song.artist}")
+        print(f"instrument: {song.intrument}")
+        print(f"genre: {song.genre}")
+        print(f"progress: {song.progress}%")
 
 def search_songs():
     ##Search a song within the database
