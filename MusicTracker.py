@@ -115,6 +115,7 @@ def delete_song():
         return 
     songs.remove(song)
 """
+running = True
 while running:
     menu()
     user_input = input("Enter your choice: ")

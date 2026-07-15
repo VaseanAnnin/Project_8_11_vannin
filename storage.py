@@ -10,8 +10,12 @@ def load_songs():
     
     except FileNotFoundError:
         return[]
+    except json.JSONDecodeError:
+        return[]
+    
+    
 
 def save_songs(song_list):
     with open("songs.json", "w") as file:
-        json.dump([song.to_dict() for song in song_list],
+        json.dump([song.update_dict() for song in song_list],
                   file)

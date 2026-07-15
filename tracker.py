@@ -14,7 +14,7 @@ def add_song(songs):
                instrument=instrument,
                genre=genre,
                progress=progress)
-    song.append(song)
+    songs.append(song)
     save_songs(songs)
 
     print("=========Song added=========")

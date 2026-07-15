@@ -18,3 +18,4 @@ class Song:
             "genre": self.genre,
             "progress": self.progress
         }
+
