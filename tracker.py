@@ -72,4 +72,5 @@ def delete_song(songs):
     if song is None:
         return 
     songs.remove(song)
+    save_songs(songs)
     
